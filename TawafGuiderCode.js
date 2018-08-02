@@ -1,31 +1,31 @@
-<script>
- tawaf();
+tawaf();
 function tawaf() {
        var count = 0;
+       var audio = new Audio('0.mp3');audio.play();
         while (count <= 7) {
             if (area()) {
                 count++;
                 switch (count) {
                     case 1:
-                         document.write("\n First round is done");
+                         audio = new Audio('1.mp3');audio.play();
                         break;
                     case 2:
-                         document.write("Second round is done");
+                         audio = new Audio('2.mp3');audio.play();
                         break;
                     case 3:
-                         document.write("Third round is done");
+                         audio = new Audio('3.mp3');audio.play();
                         break;
                     case 4:
-                        document.write("Fourth round is done");
+                         audio = new Audio('4.mp3');audio.play();
                         break;
                     case 5:
-                        document.write("Fivth round is done");
+                        audio = new Audio('5.mp3');audio.play();
                         break;
                     case 6:
-                        document.write("Sixth round is done");
+                        audio = new Audio('6.mp3');audio.play();
                         break;
                     case 7:
-                        document.write("Tawaf is done");
+                        audio = new Audio('7.mp3');audio.play();
                         
                 }
                 document.write("<br>");
@@ -39,7 +39,3 @@ function tawaf() {
         return false;    
     }
 
-
-
-
-</script>
